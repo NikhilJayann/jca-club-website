@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arts & Sports Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">JCA</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+            <li><a href="#members" onclick="showSection('members')">Members</a></li>
+            <li><a href="#register" onclick="showSection('register')">Register</a></li>
+            <li><a href="#gallery" onclick="showSection('gallery')">Gallery</a></li>
+        </ul>
+    </header>
+      
+
+    <main class="section-wrapper">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <h2>Welcome to Our Club</h2>
+            <div class="hero">
+                <img src="./WhatsApp Image 2025-06-29 at 15.43.10.jpeg" alt="Club Hero Image">
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfChomeCTCmrIogznZoC3Far54KSTMFkMeOscZVV-UBoLUKgw/viewform?usp=sharing" target="_blank">
+                <button class="home-register-btn">Register Now</button></a>
+                <a href="./Blood Bank JCA.pdf" download class="home-btn blood">Blood Bank</a>
+            </a>
+            <div class="welcome-container">
+                <h2>Welcome to Our Club</h2>
+                <p>
+                    JCA Arts and Sports Club, proudly rooted in the cultural town of Mannar in Alappuzha district, Kerala, is a
+                    vibrant community organization dedicated to nurturing talent, promoting physical wellness, and celebrating the
+                    rich heritage of our region. Founded with the vision of empowering local youth and bringing the community
+                    together, JCA actively promotes both artistic expression and sporting excellence.
+                    <br><br>
+                    We host regular cultural events, traditional arts programs, sports tournaments, and community gatherings that
+                    strengthen the social fabric of Mannar. Whether it’s organizing a football tournament, a painting competition,
+                    or celebrating local festivals, JCA stands as a beacon of unity and opportunity for all age groups. Our club
+                    encourages leadership, teamwork, creativity, and healthy living, all while preserving Kerala’s deep-rooted
+                    traditions.
+                    <br><br>
+                    We take pride in being more than just a club — we are a family of passionate individuals working together for a
+                    brighter, more vibrant community.
+                </p>
+            </div>
+              
+            
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Our Club</h2>
+            <div class="about-box">
+                <h3><span class="emoji">🎯</span> Our Mission</h3>
+                <p>We aim to foster creativity and physical activity through arts and sports. Our club supports young
+                    talents and promotes community engagement.</p>
+            </div>
+
+            <h3>🎖 Committee Members</h3>
+            <ul class="leader-list">
+                <li>Sidharth S - President</li>
+                <li>Nandu R - Secretary</li>
+                <li>Abhijith K - Vice President</li>
+                <li>Ajith S - Joint Secretary</li>
+                <li>Sanal S - Treasurer</li>
+                <li>Sreejith S - Executive Member</li>
+                <li>Syamkrishnan - Executive Member</li>
+                <li>Niju Jayan - Executive Member</li>
+                <li>Sachu S - Social Media</li>
+            </ul>
+        </section>
+
+        <!-- Members Section -->
+        <section id="members" class="section">
+            <h2>Our Club Members</h2>
+            <div id="playerList" class="players"></div>
+            
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="section">
+            <h2>Join the Club</h2>
+            <form id="joinForm">
+                <input type="text" id="playerName" placeholder="Name" required>
+                <input type="number" id="playerAge" placeholder="Age" required>
+                <input type="text" id="playerRole" placeholder="blood group" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="./WhatsApp Image 2025-06-29 at 15.43.10.jpeg" alt="Gallery Image 1">
+                <img src="./fd.jpeg" alt="Gallery Image 2">
+                <img src="./WhatsApp Image 2025-06-29 at 16.04.47.jpeg" alt="Gallery Image 3">
+                <!-- Add more images -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arts & Sports Club</p>
+        <a href="https://instagram.com/yourclub" target="_blank" class="instagram-icon">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </footer>
+
+    <!-- Font Awesome for Instagram icon -->
+    <script src="script.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
