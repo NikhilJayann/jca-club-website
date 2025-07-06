@@ -656,3 +656,25 @@ main {
                                                 footer a.instagram-icon:hover {
                                                     color: #f09433;
                                                 }
+                                                                                                footer a.facebook-icon {
+                                                                                                    color: white;
+                                                                                                    text-decoration: none;
+                                                                                                    display: inline-flex;
+                                                                                                    align-items: center;
+                                                                                                    gap: 8px;
+                                                                                                    margin-top: 10px;
+                                                                                                    font-weight: bold;
+                                                                                                    font-size: 16px;
+                                                                                                    transition: color 0.3s ease;
+                                                                                                }
+                                                
+                                                                                                footer a.facebook-icon i {
+                                                                                                    font-size: 20px;
+                                                                                                    background: linear-gradient(45deg, #1680f8, #8b9dc3);
+                                                                                                    -webkit-background-clip: text;
+                                                                                                    -webkit-text-fill-color: transparent;
+                                                                                                }
+                                                
+                                                                                                footer a.facebook-icon:hover {
+                                                                                                    color: #3b5998;
+                                                                                                }
